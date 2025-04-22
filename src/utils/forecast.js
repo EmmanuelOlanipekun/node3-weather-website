@@ -14,7 +14,7 @@
             const description = body.current.weather_descriptions[0]
 
             callback(undefined, {
-                message: `${description}. It currently ${temperature} degrees out. Its feels like ${feelslike} degrees out.  The sky is currently ${visibility} visibility.  `
+                message: `${description}. It currently ${body.current.temperature} degrees out. Its feels like ${body.current.feelslike} degrees out. The humidity is currently ${body.current.humidity} %. `
             })
         }
     })
