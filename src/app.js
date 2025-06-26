@@ -23,14 +23,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
       res.render('index', {
         title: "Weather",
-        name: "Ayaka Kagari"
+        name: "Olanipekun Emmanuel"
       })
  })
 
  app.get('/about', (req, res) => {
      res.render('about', {
         title: 'About Me',
-        name: 'Ayaka Kagari'
+        name: 'Olanipekun Emmanuel'
      })
  })
 
@@ -38,7 +38,7 @@ app.get('', (req, res) => {
     res.render('help', {
         helpText: 'Welcome to the help page.',
         title: 'Help page',
-        name: 'Ayaka Kagari'
+        name: 'Olanipekun Emmanuel'
     })
  })
 
@@ -73,17 +73,17 @@ app.get('', (req, res) => {
 
 
  app.get('/help/*', (req, res) => {
-     res.render('404', {
-      title: '404',
-      name: 'Ayaka kagari',
-      errorMessage: 'Help article not found!'
-     })
- })
+      res.render('404', {
+       title: '404',
+       name: 'Olanipekun Emmanuel',
+       errorMessage: 'Help article not found!'
+      });
+   });
 
 app.get('*', (req, res) => {
    res.render('404', {
       title: '404',
-      name: 'Ayaka Kagari',
+      name: 'Olanipekun Emmanuel',
       errorMessage: 'Page not found!'
    })
 })
