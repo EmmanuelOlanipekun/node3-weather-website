@@ -8,17 +8,20 @@
         } else if (body.error) {
             callback('Unable to find location.', undefined)
         } else {
-
             const temperature = body.current.temperature
             const feelslike = body.current.feelslike
             const description = body.current.weather_descriptions[0]
+            const hunidity =  body.current.humidity
 
             callback(undefined, {
-                message: `${description}. It currently ${body.current.temperature} degrees out. Its feels like ${body.current.feelslike} degrees out. The humidity is currently ${body.current.humidity} %. `
-            })
+                description: body.current.weather_descriptions[0],
+                temperature: body.current.temperature,
+                feelslike: body.current.feelslike,
+                humidity: body.current.humidity,
+            });
         }
-    })
+    });
 }
 
 
-module.exports = forecast
+module.exports = forecast;

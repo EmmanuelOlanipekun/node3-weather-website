@@ -9,13 +9,24 @@
 </head>
 
 <body>
-    <div class="main-content">
+
+    <div >
         {{>header}}
-        <p>This site was created by Olanipekun Emmanuel. It uses data from weatherstack.com and positon-data from positionstack.com!</p>
-        <img class="portrait" src="/img/me.png">
+
+        <div class="main-content">
+            <p>
+                This site was created by <strong>Olanipekun Emmanuel</strong>.  
+                It uses real-time data from <a href="https://weatherstack.com" target="_blank">weatherstack.com</a>  
+                and geolocation services from <a href="https://positionstack.com" target="_blank">positionstack.com</a>.
+            </p>
+
+            <img class="portrait" src="/img/me.png" alt="Olanipekun Emmanuel">
+        </div>
+
+
+        {{>footer}}
     </div>
-   
-    {{>footer}}
+
 </body>
 
 

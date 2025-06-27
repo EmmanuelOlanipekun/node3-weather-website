@@ -1,8 +1,10 @@
+
+
 body {
-    color: #333333;
-    background-color: white;
-    font-family: Arial;
-    max-width:  650px;
+    color: #222222;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
     display: flex;
@@ -10,55 +12,101 @@ body {
     min-height: 100vh;
 }
 
-.main-content{
+.main-content {
     flex-grow: 1;
     text-align: center;
 }
 
 
 footer {
-   color: #888888;
-   border-top: 1px solid #eeeeee;
-   margin-top: 16px;
-   padding: 16px 0;
+    color: #666666;
+    border-top: 1px solid #dddddd;
+    margin-top: 16px;
+    padding-top: 20px;
+  padding-bottom: 20px;
+    font-weight: 500;
 }
 
-header {
 
-    background-color: beige;
+header {
+    background-color: #00bcd4; 
     text-align: center;
     padding: 20px;
     margin-top: 16px;
     margin-bottom: 48px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
-    color: black;
+    color: #1a1a1a;
 }
 
 header a {
-    color: black;
+    color: #1a1a1a;
     margin-right: 16px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
+
+header a:hover {
+    color: #ff4081; 
+}
+
 
 .portrait {
     width: 250px;
 }
 
+
 input {
-    border: 1px solid #cccccc;
-    padding: 8px;
+    border: 2px solid #00bcd4;
+    padding: 10px;
+    border-radius: 6px;
     text-align: center;
-} 
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #0097a7;
+    outline: none;
+}
+
 
 button {
     cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
+    border: none;
+    background: #00bcd4; 
     color: white;
-    padding: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
+
+button:hover {
+    background: #0097a7; 
+}
+
+#message-1,
+#message-2 {
+  background-color: #e0f7fa; 
+  color: #004d40;            
+  padding: 16px 20px;
+  margin: 16px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+
 
