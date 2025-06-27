@@ -12,6 +12,8 @@
             const feelslike = body.current.feelslike
             const description = body.current.weather_descriptions[0]
             const hunidity =  body.current.humidity
+            const wind_speed =  body.current.wind_speed
+            const wind_dir =  body.current.wind_dir
 
             callback(undefined, {
                 description: body.current.weather_descriptions[0],
@@ -24,4 +26,4 @@
 }
 
 
-module.exports = forecast;
+module.exports = forecast
